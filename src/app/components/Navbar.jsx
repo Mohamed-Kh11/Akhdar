@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
-import logo2 from '../Images/leaf5.png';
+import logo2 from '../images/leaf5.png';
 import Image from "next/image";
 import { useState } from "react";
 

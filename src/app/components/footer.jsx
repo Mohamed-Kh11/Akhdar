@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '../Images/leaf5.png';
+import logo from '../images/leaf5.png';
 import jungle from '../images/jungle3.webp'
 import {
   FaFacebookF,
