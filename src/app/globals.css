@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+body{
+  scroll-behavior: smooth;
+  
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  transition: 0.3s ease ;
+}
+
+/* Track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+
+  /* background: white; */
+  background: rgb(180, 179, 179) ;
+}
+
+/* Handle (the moving part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  /* background: #facc15;  */
+  @apply bg-green-700
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-green-800
+}
+::-webkit-scrollbar-track-piece:start {
+  background-image: url("data:image/svg+xml;utf8,\
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='10' height='10'>\
+  <polygon fill='%2316a34a' points='12,0 24,12 0,12'/>\
+  </svg>");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 10px;
+}
+
+::-webkit-scrollbar-track-piece:end {
+  background-image: url("data:image/svg+xml;utf8,\
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='10' height='10'>\
+  <polygon fill='%2316a34a' points='0,0 24,0 12,12'/>\
+  </svg>");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 10px;
+}
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  src: url('/fonts/NotoKufiArabic-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  src: url('/fonts/NotoKufiArabic-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  src: url('/fonts/NotoKufiArabic-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  src: url('/fonts/NotoKufiArabic-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.gradient{
+  -webkit-background-clip: text;
+  color: transparent;
+  background: linear-gradient(to right, #16a34a, #22c55e, #4ade80);
+  background-clip: text;
+}
+
+
+/* globals.css */
+
+.custom-gradient {
+  background: linear-gradient(to right, #16a34a, #065f46); /* Tailwind green-600 to green-800 */
+}
+
+[dir='rtl'] .slick-prev {
+  right: -25px;
+  left: auto;
+}
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: -28px !important;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: #08980f !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+.slick-dots li button:before {
+  font-size: 8px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #117c38 !important;
+}
+
+
+
+.slick-prev:before, .slick-next:before {
+  font-size: 25px !important;
+}
+
+.SHIT{
+  color: #56ed5d;
+}
