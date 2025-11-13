@@ -2,6 +2,8 @@ import Image from "next/image";
 import one from "../../images/trash.jpg";
 import two from "../../images/bus.jpg";
 import three from "../../images/grass.jpg";
+import Link from "next/link";
+
 
 const programs = [
   {
@@ -114,12 +116,11 @@ export default function ProgramDetails({ params }) {
       </div>
 
       {/* Back Button */}
-      <a
-        href="/programs"
+      <Link href="/programs"
         className="mt-10 px-8 py-3 bg-green-700 hover:bg-green-800 transition-all text-white rounded-full shadow-md text-lg"
       >
         العودة للبرامج
-      </a>
+      </Link>
     </div>
   );
 }
