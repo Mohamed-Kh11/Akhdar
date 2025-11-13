@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 
 // Helper to get the base URL depending on environment
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ;
 
 // Load articles from JSON via public fetch
 async function getArticles() {
